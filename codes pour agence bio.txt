@@ -1,0 +1,28 @@
+CASE
+  WHEN "CODE_CULTU" = 'BLE' THEN '#ffff00'         -- Blé tendre/Blé dur en jaune
+  WHEN "CODE_CULTU" = 'MAIS' THEN '#ff9900'        -- Maïs en orange
+  WHEN "CODE_CULTU" = 'VIGNE' THEN '#008000'       -- Vigne en vert foncé
+  WHEN "CODE_CULTU" = 'PRAIRIE' THEN '#00ccff'     -- Prairies en bleu clair
+  WHEN "CODE_CULTU" = 'TOURNESOL' THEN '#ffcc00'   -- Tournesol en jaune doré
+  WHEN "CODE_CULTU" = 'COLZA' THEN '#ff66ff'       -- Colza en rose/violet
+  WHEN "CODE_CULTU" = 'ORGE' THEN '#cc9966'        -- Orge en brun clair
+  WHEN "CODE_CULTU" = 'PROTEAGINEUX' THEN '#9966cc' -- Protéagineux en violet
+  WHEN "CODE_CULTU" = 'POMME_DE_TERRE' THEN '#663300' -- Pomme de terre en brun
+  WHEN "CODE_CULTU" = 'BETTERAVE' THEN '#ff0000'   -- Betterave en rouge
+  ELSE '#cccccc'                                -- Autres CODE_CULTUs en gris clair
+END
+
+
+Ce format correspond bien à la nomenclature statistique européenne des produits agricoles (NCPA / NAF rév.2 liée à la CPA), qui est utilisée par l’Agence Bio pour coder les productions.
+
+Décryptage du code 01.21.12
+
+01 → Section Produits de l’agriculture, de la chasse et services annexes
+
+01.2 → Cultures permanentes
+
+01.21 → Raisins
+
+01.21.12 → Raisins de cuve pour la vinification
+
+👉 Donc, 01.21.12 signifie : raisins destinés à la vinification (production de vin).
